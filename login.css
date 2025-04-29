@@ -1,0 +1,91 @@
+:root{
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --input-bg: #f0f0f0;
+    --button-bg: #007bff;
+    --button-text: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.1);    
+}
+
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --input-bg: #1e1e1e;
+    --button-bg: #4a90e2;
+    --button-text: #ffffff;
+    --shadow: rgba(255, 255, 255, 0.1);
+}
+
+body{
+    margin: 0;
+    font-family: "Sergoe UI", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle label{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.login-container{
+    background: var(--input-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px var(--shadow);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-container h2{
+    margin-bottom: 1rem;
+}
+
+.login-container input{
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s;
+}
+
+.login-container button{
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.login-container button:hover{
+    opacity: 0.9;
+}
+
+.name{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.name h1{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
